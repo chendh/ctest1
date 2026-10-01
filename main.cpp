@@ -2,11 +2,11 @@
 using namespace std;
 
 int main(){
-    cout << "Hello World!\n";
+    int a, b, c;
+    cin >> a >> b >> c;
 
-    int a=5;
-    float b=0.03;
+    if (a+b>c && b+c>a && c+a>b) cout << "yes";
+    else cout << "no";
 
-    cout << "a=" << a << endl;
-    cout << "b=" << b << endl;
+    return 0;
 }
