@@ -1,12 +1,16 @@
 #include <iostream>
+
 using namespace std;
 
 int main(){
-    int a, b, c;
-    cin >> a >> b >> c;
+    int n;
+    string message = " is a prime";
 
-    if (a+b>c && b+c>a && c+a>b) cout << "yes";
-    else cout << "no";
+    cin >> n;
 
+    for (int i = 2; i<n; i++){
+        if (n%i==0) message = " is not a prime";
+    }
+    cout << n << message << endl;
     return 0;
 }
